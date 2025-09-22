@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+</head>
+<body>
+    <center>
+        <h1>
+            <font color="purple">Perfil de Usuário</font>
+        </h1>
+
+        <font color="purple"><p>Bem-vindo(a) ao perfil de Sandy Bochechas!</p><br></font>
+
+    <!--Inserindo Imagem do Usuário-->
+    <img src="img/sandy.jpg" width="180px" height="200px"   alt="Foto do Usuário">
+    
+    </center>
+
+    <!--Informações do Usuário-->
+    <h2>
+        <font color="purple">Informações Básicas</font>
+    </h2>
+        <form action="/submit" method="POST">
+
+        <!--Nome Completo-->
+        <label for="nome"> Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <!--E-mail-->
+        <label for="email"> E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!--Data de Nascimento-->
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento" required><br><br>
+
+        <!-- Cidade-->
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required><br><br>
+
+        </form>
+    
+        <!-- Lista de Interesses -->
+        <h2>
+            <font color="purple">Meus Interesses</font>
+        </h2>
+        <ul>
+            <li>Tecnologia</li>
+            <li>Música</li>
+            <li>Viagens</li>
+        </ul>
+
+        <!-- Botão -->
+        <button>Editar Perfil</button>
+        
+
+</body>
+</html>
