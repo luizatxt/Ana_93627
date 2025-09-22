@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>
+        <font color="red">Minhas Tarefas</font>
+    </h1>
+
+    <!-- Campo para adicionar tarefa -->
+    <label for="novaTarefa">Digite uma nova tarefa:</label>
+    <input type="text" id="novaTarefa" name="novaTarefa">
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+    
+    <!-- Lista de Tarefas -->
+    <h2>Tarefas</h2>
+    <ol id="listaTarefas">
+        <li><input type="checkbox"> Estudar HTML</li>
+        <li><input type="checkbox"> Fazer exercícios</li>
+        <li><input type="checkbox"> Ler um livro</li>
+    </ol>
+
+    <!-- Script para adicionar tarefas -->
+    <script>
+        function adicionarTarefa() {
+            const input = document.getElementById("novaTarefa");
+            const texto = input.value.trim();
+
+            // Verifica se o campo não está vazio
+            if (texto !== "") {
+                const lista = document.getElementById("listaTarefas");
+                const novaTarefa = document.createElement("li");
+
+                // Criar um checkbox para a nova tarefa
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+
+                // Adicionar o checkbox e o texto à nova tarefa
+                novaTarefa.appendChild(checkbox);
+                novaTarefa.append(" " + texto);
+
+                // Adicionar a nova tarefa à lista
+                lista.appendChild(novaTarefa);
+
+                // Limpar o campo de entrada
+                input.value = "";
+            } else {
+                alert("Digite uma tarefa válida.");
+            }
+        }
+    </script>
+</body>
+</html>
