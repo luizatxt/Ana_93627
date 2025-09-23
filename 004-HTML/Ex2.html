@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lune Magic Cookies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+    /* Menu lateral */
+    nav {
+      width: 180px;
+      background: #d1c4e9;
+      padding: 15px;
+    }
+    nav a {
+      display: block;
+      text-decoration: none;
+      color: #4a148c;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background: #7b1fa2;
+      color: white;
+      padding-left: 5px;
+    }
+    /* Conteúdo */
+    main {
+      flex: 1;
+      padding: 15px;
+      background: #f3e5f5;
+    }
+    header, footer {
+      background: #9575cd;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .banner {
+      background: #e1bee7;
+      text-align: center;
+      margin: 15px 0;
+      padding: 20px;
+    }
+    .logo {
+      background: #ba68c8;
+      display: inline-block;
+      padding: 20px;
+      border-radius: 50%;
+      margin: 10px;
+      color: white;
+    }
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .produto {
+      background: white;
+      border: 1px solid #ccc;
+      width: 150px;
+      text-align: center;
+      padding: 10px;
+    }
+    .produto .img {
+      background: #ab47bc;
+      height: 80px;
+      margin-bottom: 8px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    form {
+      background: white;
+      padding: 15px;
+      margin-top: 15px;
+    }
+    form input, form button {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu lateral -->
+  <nav>
+    <h3>Menu</h3>
+    <a href="#home">Home</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#promocoes">Promoções</a>
+    <a href="#contato">Contatos</a>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main>
+    <header>
+      <h1>Lune Magic Cookies</h1>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+      <span>Banner</span>
+      <span class="logo">Logo</span>
+      <span>Banner</span>
+    </div>
+
+    <!-- Produtos -->
+    <h2 id="produtos">Produtos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <div class="img">Imagem 1</div>
+        <p>Texto da imagem 1</p>
+      </div>
+      <div class="produto">
+        <div class="img">Imagem 2</div>
+        <p>Texto da imagem 2</p>
+      </div>
+      <div class="produto">
+        <div class="img">Imagem 3</div>
+        <p>Texto da imagem 3</p>
+      </div>
+    </div>
+
+    <!-- Formulário -->
+    <h2 id="contato">Contato</h2>
+    <form>
+      <input type="text" placeholder="Nome completo" required>
+      <input type="email" placeholder="E-mail" required>
+      <input type="tel" placeholder="Telefone" required>
+      <input type="text" placeholder="Endereço" required>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Informações -->
+    <p>Email: lunemagiccookies@gmail.com</p>
+    <p>Instagram: @Lune_MagicCookies</p>
+    <p>WhatsApp: (75) 99711-3608</p>
+
+    <footer>
+      <p>© 2025 Lune Magic Cookies</p>
+    </footer>
+  </main>
+
+</body>
+</html>
