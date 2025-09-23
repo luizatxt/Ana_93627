@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lune Magic Cookies - Home</title>
+  <title>Lune Magic Cookies - Contato</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; display: flex; }
     nav { width: 180px; background: #d1c4e9; padding: 15px; }
@@ -13,9 +13,8 @@
     header, footer { background: #9575cd; color: white; text-align: center; padding: 10px; }
     .banner { background: #e1bee7; text-align: center; margin: 15px 0; padding: 20px; }
     .logo { background: #ba68c8; display: inline-block; padding: 20px; border-radius: 50%; margin: 10px; color: white; }
-    .produtos { display: flex; flex-wrap: wrap; gap: 15px; }
-    .produto { background: white; border: 1px solid #ccc; width: 150px; text-align: center; padding: 10px; }
-    .produto .img { background: #ab47bc; height: 80px; margin-bottom: 8px; color: white; display: flex; align-items: center; justify-content: center; }
+    form { background: white; padding: 15px; margin: 15px 0; }
+    form input, form button { display: block; width: 100%; margin: 8px 0; padding: 8px; }
   </style>
 </head>
 <body>
@@ -31,7 +30,7 @@
   <!-- Conteúdo -->
   <main>
     <header>
-      <h1>Lune Magic Cookies</h1>
+      <h1>Contato</h1>
     </header>
 
     <!-- Banner -->
@@ -41,39 +40,21 @@
       <span>Banner</span>
     </div>
 
-    <!-- Produtos -->
-    <h2 id="produtos">Produtos</h2>
-    <div class="produtos">
-      <div class="produto">
-        <div class="img">Imagem 1</div>
-        <p>Texto da imagem 1</p>
-      </div>
-      <div class="produto">
-        <div class="img">Imagem 2</div>
-        <p>Texto da imagem 2</p>
-      </div>
-      <div class="produto">
-        <div class="img">Imagem 3</div>
-        <p>Texto da imagem 3</p>
-      </div>
-    </div>
+    <!-- Formulário -->
+    <h2>Formulário de Venda</h2>
+    <form>
+      <input type="text" placeholder="Nome completo" required>
+      <input type="email" placeholder="E-mail" required>
+      <input type="tel" placeholder="Telefone" required>
+      <input type="text" placeholder="Endereço" required>
+      <button type="submit">Enviar</button>
+    </form>
 
-    <!-- Promoções -->
-    <h2 id="promocoes">Promoções</h2>
-    <div class="produtos">
-      <div class="produto">
-        <div class="img">Imagem Promo 1</div>
-        <p>-22% OFF</p>
-      </div>
-      <div class="produto">
-        <div class="img">Imagem Promo 2</div>
-        <p>-28% OFF</p>
-      </div>
-      <div class="produto">
-        <div class="img">Imagem Promo 3</div>
-        <p>-35% OFF</p>
-      </div>
-    </div>
+    <!-- Informações -->
+    <h3>Outros Contatos</h3>
+    <p>Email: lunemagiccookies@gmail.com</p>
+    <p>Instagram: @Lune_MagicCookies</p>
+    <p>WhatsApp: (75) 99711-3608</p>
 
     <footer>
       <p>© 2025 Lune Magic Cookies</p>
