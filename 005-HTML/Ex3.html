@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato - Loja Exemplo</title>
+</head>
+<body>
+
+    <!-- Cabeçalho com fachada da loja -->
+    <header>
+        <img src="img3/fachada.jpg" width="880px" height="480px" alt="Fachada da loja">
+        <h1>Entre em Contato Conosco</h1>
+    </header>
+
+    <!-- Formulário -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Formulário de Contato</legend>
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+
+            <label for="produto">Selecione um produto ou serviço:</label><br>
+            <select id="produto" name="produto">
+                <option value="camiseta">Camiseta personalizada</option>
+                <option value="caneca">Caneca estampada</option>
+                <option value="agenda">Agenda 2025</option>
+                <option value="boné">Boné bordado</option>
+            </select><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+
+    <!-- Tabela com produtos/serviços -->
+    <h2>Produtos e Serviços Disponíveis</h2>
+    <table border="1">
+        <tr>
+            <th>Produto/Serviço</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Camiseta Personalizada</td>
+            <td>100% algodão, várias cores e tamanhos</td>
+            <td>R$ 49,90</td>
+        </tr>
+        <tr>
+            <td>Caneca Estampada</td>
+            <td>Material cerâmica, 325ml</td>
+            <td>R$ 29,90</td>
+        </tr>
+        <tr>
+            <td>Agenda 2025</td>
+            <td>Capa dura, várias cores</td>
+            <td>R$ 39,90</td>
+        </tr>
+        <tr>
+            <td>Boné Bordado</td>
+            <td>Logo personalizado, aba curva</td>
+            <td>R$ 34,90</td>
+        </tr>
+    </table>
+
+    <!-- Rodapé com redes sociais fictícias -->
+    <footer>
+        <hr>
+        <p>Siga-nos nas redes sociais:</p>
+        <p>
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </p>
+        <p>&copy; 2025 Loja Exemplo - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
