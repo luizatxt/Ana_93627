@@ -1,0 +1,90 @@
+/*Criando o menu estilizando Simples*/
+nav{
+    background-color: #bdb768;
+    margin-left: 22px;
+    margin-right: 80px;
+}
+ul{
+    /*Alinha os itens no horizontal*/
+    display: flex;
+}
+
+li{
+    /*Tira as bolionhas dos itens*/
+    list-style: none;
+    padding: 20px;
+
+}
+
+a{
+    /*Tira o sublinhado do link*/
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    font-size: 22pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: overline;
+    background-color: bisque;
+    padding: 50px;
+}
+
+h2{
+    padding: 10px;
+    padding-top: 100px;
+    margin-left: 22px;
+    margin-right: 80px;
+    background-color: #bdb768;
+    color: azure;
+    border: lpx solid black;
+
+}
+
+img{
+
+    /*Largura*/
+    width: 700px;
+
+    /*Altura*/
+
+
+    /*Heigth*/
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+div{
+
+    display: flex;
+
+}
+
+p{
+
+    margin-right: 70px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-top: 50px;
+
+}
+
+footer{
+    background-color: #bdb768; 
+    margin-left: 22px;
+    margin-right: 80px;
+}
+
+h3{
+    padding-top: 20px;
+    text-align: center;
+    color: azure;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    /*Bottons é para baixo*/
+
+}
+
