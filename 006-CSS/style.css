@@ -1,0 +1,176 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;                    /* remove margens padrão */
+  padding: 0;                   /* remove espaçamentos padrão */
+  box-sizing: border-box;       /* inclui borda e padding no cálculo total do tamanho */
+}
+
+/* ===== Estrutura básica ===== */
+body {
+  background-color: #d9cbb4; 
+  font-family: "Poppins", sans-serif;       /* tipo de fonte principal */
+  color: #333; 
+  display: flex;            /* ativa o flexbox */
+  flex-direction: column;       /* organiza os elementos na vertical */
+  min-height: 900px;       /* garante que ocupe 100% da altura da tela */
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  background-color: #7b542b; 
+  color: #fff; 
+  text-align: center;       /* centraliza o texto */
+  padding: 30px 0;          /* espaçamento interno (cima/baixo) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);      /* sombra abaixo do cabeçalho */
+}
+
+header h1 {
+  font-size: 40px;              /* tamanho do título */
+  letter-spacing: 1px;          /* espaço entre letras */
+}
+
+/* ===== Container principal ===== */
+.container {
+  width: 90%;               /* largura relativa (deixa margens nas laterais) */
+  max-width: 1100px;        /* limite máximo de largura */
+  margin: 0 auto;           /* centraliza o conteúdo */
+  padding: 40px 0;          /* espaçamento interno */
+  text-align: center;       /* centraliza textos */
+}
+
+/* ===== Hero ===== */
+.hero {
+  background-color: #f1d9a7; 
+  padding: 50px 30px;               /* espaçamento interno */
+  border-radius: 12px;              /* cantos arredondados */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);        /* sombra para destacar */
+  margin-bottom: 60px;      /* espaço abaixo da seção */
+}
+
+.hero h2 {
+  font-size: 32px;          /* tamanho do subtítulo */
+  margin-bottom: 15px;      /* espaço abaixo */
+  color: #4b2e05; 
+}
+
+.hero p {
+  font-size: 18px;              /* tamanho do texto */
+  margin-bottom: 25px;          /* espaço abaixo */
+  line-height: 26px;            /* altura entre linhas */
+}
+
+.cta {
+  background-color: #7b542b; 
+  color: #fff; 
+  text-decoration: none;        /* remove sublinhado */
+  padding: 12px 25px;           /* espaçamento interno */
+  border-radius: 6px;           /* bordas arredondadas */
+  font-weight: bold;            /* texto em negrito */
+  transition: background-color 0.3s ease;       /* efeito suave ao passar o mouse */
+  font-size: 16px;      /* tamanho da fonte */
+}
+
+.cta:hover {
+  background-color: #4b2e05;
+}
+
+/* ===== Seção de Planos ===== */
+.pricing {
+  display: flex;            /* usa flexbox */
+  flex-wrap: wrap;         /* permite quebrar linha */
+  justify-content: center;          /* centraliza os cards */
+  gap: 30px;         /* espaço entre os cards */
+}
+
+.card {
+  background-color: #fff; 
+  border-radius: 10px;          /* cantos arredondados */
+  padding: 25px;                /* espaçamento interno */
+  width: 300px;                 /* largura fixa dos cards */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);       /* sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;        /* animação suave */
+  position: relative;       /* permite posicionar elementos absolutos dentro */
+}
+
+.card:hover {
+  transform: translateY(-8px);      /* levanta o card ao passar o mouse */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);      /* sombra mais forte */
+}
+
+.card h3 {
+  color: #7b542b;
+  font-size: 24px;          /* tamanho do título */
+  margin-bottom: 10px;      /* espaço abaixo */
+}
+
+.card p {
+  font-size: 15px;      /* tamanho do texto */
+  color: #555;
+  margin-bottom: 15px;  /* espaço abaixo */
+  line-height: 22px;    /* altura entre linhas */
+}
+
+.price {
+  font-size: 20px;      /* tamanho do preço */
+  font-weight: bold;     /* negrito */
+  color: #4b2e05; 
+  margin-bottom: 15px;      /* espaço abaixo */
+}
+
+.benefits {
+  list-style: none;     /* remove os marcadores da lista */
+  margin-bottom: 20px;      /* espaço abaixo */
+  text-align: left;         /* alinha à esquerda */
+}
+
+.benefits li {
+  padding: 5px 0;            /* espaço entre os itens */
+  border-bottom: 1px solid #eee;        /* linha separadora */
+  font-size: 15px;          /* tamanho do texto */
+}
+
+/* ===== Botões ===== */
+.btn {
+  display: inline-block;            /* permite definir largura e altura */
+  background-color: #7b542b; 
+  color: #fff;               /* texto branco */
+  text-decoration: none;        /* remove sublinhado */
+  padding: 10px 22px;           /* espaçamento interno */
+  border-radius: 6px;           /* cantos arredondados */
+  font-weight: 600;             /* texto levemente negrito */
+  transition: background-color 0.3s ease;       /* animação ao passar o mouse */
+  font-size: 15px;      /* tamanho da fonte */
+}
+
+.btn:hover {
+  background-color: #4b2e05;
+}
+
+/* ===== Tag “Mais Popular” ===== */
+.tag {
+  position: absolute;       /* posicionamento livre dentro do card */
+  top: -10px;       /* sobe um pouco acima do topo */
+  right: -10px;     /* desloca à direita */
+  background-color: #f1d9a7; 
+  color: #4b2e05; 
+  font-size: 13px;      /* tamanho da fonte */
+  padding: 5px 10px;        /* espaçamento interno */
+  border-radius: 6px;       /* cantos arredondados */
+  font-weight: bold;        /* negrito */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);     /* sombra */
+}
+
+/* ===== Destaque do plano intermediário ===== */
+.popular {
+  border: 3px solid #7b542b; 
+}
+
+/* ===== Rodapé ===== */
+footer {
+  background-color: #7b542b; 
+  color: #fff; 
+  text-align: center;       /* centraliza o conteúdo */
+  padding: 20px 0;      /* espaçamento interno */
+  margin-top: auto;         /* empurra o rodapé pro final da página */
+  font-size: 15px;          /* tamanho do texto */
+}
