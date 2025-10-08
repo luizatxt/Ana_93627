@@ -164,5 +164,6 @@ footer {
   background: #5CACEE;          /* Fundo azul */
   text-align: center;            /* Texto centralizado */
   padding: 15px;                /* Espaçamento interno */
-  margin-top: 20px;            /* Espaço acima do rodapé */
+  margin-top: auto;         /* empurra o rodapé pro final da página */
+  
 }
