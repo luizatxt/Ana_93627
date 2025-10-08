@@ -1,0 +1,35 @@
+/* Fundo */
+body {
+  background-color: #d9cbb4;         /*define a cor de fundo da página*/
+  display: flex;    /*poder centralizar o conteúdo com facilidade*/
+  justify-content: center;       /*centraliza o conteúdo horizontalmente*/
+  align-items: center;     /*centraliza o conteúdo verticalmente*/
+  height: 900px;      /*uma altura fixa pro corpo, pra garantir que o conteúdo fique centralizado no meio*/
+}
+
+/* Tabuleiro */
+.tabuleiro {
+  background-color: #7b542b;
+  padding: 10px;    /*espaço entre a borda e as casas*/
+  border-radius: 8px;    /*deixa os cantos ligeiramente arredondados, pra parecer mais real*/
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);  /*adiciona uma sombra, dando sensação de profundidade*/
+}
+
+/* Linhas */
+.linha {
+  display: flex;   /*faz com que as 8 casas fiquem lado a lado na mesma linha*/
+}
+
+/* Casas */
+.preta, .branca {
+  width: 60px;
+  height: 60px;
+}
+
+.preta {
+  background-color: #4b2e05;
+}
+
+.branca {
+  background-color: #f1d9a7;
+}
