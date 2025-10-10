@@ -1,0 +1,104 @@
+/* ===== Reset Básico ===== */
+/* Remove espaçamentos padrão e padroniza o comportamento dos elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui padding e borda dentro do tamanho total do elemento */
+  font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+}
+
+/* ===== Fundo da Página ===== */
+/* Define a aparência e o posicionamento geral da página */
+body {
+  background-color: #f5f5f5; /* Fundo cinza-claro para contraste com o container */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  display: flex; /* Ativa o modelo flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center;     /* Centraliza o conteúdo verticalmente */
+}
+
+/* ===== Container Principal ===== */
+/* Caixa branca centralizada que contém o título e o formulário */
+.container {
+  background-color: #fff; /* Fundo branco para destacar o conteúdo */
+  padding: 40px; /* Espaço interno entre o conteúdo e as bordas */
+  border-radius: 12px; /* Arredonda os cantos da caixa */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra suave para dar profundidade */
+  width: 350px; /* Define uma largura fixa agradável */
+  text-align: center; /* Centraliza o texto e elementos internos */
+}
+
+/* ===== Título Principal ===== */
+.container h1 {
+  color: #4B0082; /* Roxo escuro */
+  margin-bottom: 25px; /* Espaço abaixo do título */
+  font-size: 26px; /* Tamanho do texto */
+}
+
+/* ===== Formulário ===== */
+/* Organiza os campos um embaixo do outro */
+form {
+  display: flex;
+  flex-direction: column; /* Define os elementos do formulário em coluna */
+  align-items: stretch;   /* Faz com que os inputs ocupem toda a largura disponível */
+}
+
+/* ===== Labels ===== */
+label {
+  display: block; /* Garante que cada label ocupe uma linha inteira */
+  text-align: left; /* Alinha o texto à esquerda para melhor leitura */
+  margin-bottom: 5px; /* Espaço entre o label e o campo de entrada */
+  color: #333;
+  font-weight: bold;
+}
+
+/* ===== Inputs ===== */
+input {
+  width: 100%; /* Ocupa toda a largura do formulário */
+  padding: 10px; /* Espaço interno dentro do campo */
+  margin-bottom: 15px; /* Espaço entre os campos */
+  border: 1px solid #ccc; /* Borda cinza discreta */
+  border-radius: 6px; /* Arredonda os cantos */
+  font-size: 16px;
+  transition: 0.3s; /* Suaviza a mudança visual ao focar no campo */
+}
+
+/* Quando o usuário clica no campo (focus) */
+input:focus {
+  border-color: #8A2BE2; /* Muda a cor da borda */
+  outline: none; /* Remove o contorno azul padrão do navegador */
+  box-shadow: 0 0 5px rgba(138, 43, 226, 0.5); /* Adiciona um leve brilho roxo */
+}
+
+/* ===== Botão ===== */
+/* Aplica estilos consistentes e animações suaves */
+button, buttom {
+  width: 100%; /* Botão ocupa toda a largura do container */
+  background-color: #8A2BE2; /* Roxo principal */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer; /* Mostra a “mãozinha” ao passar o mouse */
+  transition: background 0.3s; /* Cria um efeito suave na troca de cor */
+}
+
+/* Efeito visual ao passar o mouse sobre o botão */
+button:hover, buttom:hover {
+  background-color: #6b22b3; /* Roxo mais escuro no hover */
+}
+
+/* ===== Resultado ===== */
+/* Estilo da área onde o resultado será exibido */
+.result {
+  margin-top: 20px; /* Espaço entre o botão e o resultado */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* O número do resultado aparece com cor azul destacada */
+.result span {
+  color: #007bff;
+}
