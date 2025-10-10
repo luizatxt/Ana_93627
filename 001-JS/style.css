@@ -1,0 +1,107 @@
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Corpo da página ===== */
+body {
+  background-color: #f7f7f7;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  text-align: center;
+  background-color: #EE82EE;
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+/* ===== Container do formulário ===== */
+.form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin-top: 120px;
+  text-align: center;
+}
+
+/* ===== Título dentro do formulário ===== */
+.form-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* ===== Formulário ===== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Labels ===== */
+label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ===== Inputs ===== */
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #EE82EE;
+  outline: none;
+  box-shadow: 0 0 5px rgba(238, 130, 238, 0.5);
+}
+
+/* ===== Botão ===== */
+button {
+  background-color: #EE82EE;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #d970d9;
+}
+
+/* ===== Mensagem de erro ===== */
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+}
