@@ -1,0 +1,59 @@
+/* Estilo geral do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E3F2FD; /* Azul suave e claro para o fundo da página */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal que vai envolver o formulário e a explicação */
+.container {
+  background-color: #BBDEFB; /* Azul mais saturado para o fundo do formulário */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Título do formulário */
+h2 {
+  margin-bottom: 15px;
+  color: #1E3A8A; /* Azul escuro para o título */
+}
+
+/* Estilo para o campo de input */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #90CAF9; /* Borda azul claro suave */
+  border-radius: 5px;
+  font-size: 1em;
+  color: #1E3A8A; /* Azul escuro para o texto */
+}
+
+/* Estilo para o botão de consulta */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #64B5F6; /* Azul médio para o botão */
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Cor do botão quando o mouse passa por cima */
+button:hover {
+  background-color: #42A5F5; /* Azul mais forte para interação */
+}
+
+/* Estilo para a área que mostra o resultado da consulta */
+.resultado {
+  text-align: left;
+  margin-top: 15px;
+  color: #1E3A8A; /* Azul escuro para o texto dos resultados */
+}
