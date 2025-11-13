@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Produtos</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  {% if not session.get('usuario') %}
+    <h1>Login</h1>
+
+    {% if erro %}
+      <p style="color:red; text-align:center;">{{ erro }}</p>
+    {% endif %}
+
+    <form method="post">
+      <label>Usuário:</label>
+      <input type="text" name="usuario" required>
+
+      <label>Senha:</label>
+      <input type="password" name="senha" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+  {% else %}
+    <h1>Produtos Cadastrados</h1>
+    <p style="text-align:right;">
+      Logado como <b>{{ usuario }}</b> |
+      <a href="/logout" class="botao">Sair</a>
+    </p>
+
+    <a href="/cadastrar" class="botao">Cadastrar Novo Produto</a>
+
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+      </tr>
+      {% for p in produtos %}
+      <tr>
+        <td>{{ p[0] }}</td>
+        <td>{{ p[1] }}</td>
+        <td>R$ {{ p[2] }}</td>
+        <td>{{ p[3] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  {% endif %}
+</body>
+</html>

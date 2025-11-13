@@ -1,10 +1,9 @@
-// Valida se os campos estão preenchidos
 function validarFormulario() {
-  const nome = document.getElementById("nome").value;
-  const preco = document.getElementById("preco").value;
-  const quantidade = document.getElementById("quantidade").value;
+  const descricao = document.getElementById("descricao").value;
+  const valor_unitario = document.getElementById("valor_unitario").value;
+  const estoque = document.getElementById("estoque").value;
 
-  if (nome === "" || preco === "" || quantidade === "") {
+  if (descricao === "" || valor_unitario === "" || estoque === "") {
     alert("Por favor, preencha todos os campos!");
     return false;
   }
