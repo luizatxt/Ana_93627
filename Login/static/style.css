@@ -1,61 +1,182 @@
-/* Define o estilo geral da página */
+/* ===== ESTILO GERAL ===== */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  padding: 20px;
+  /* Fonte moderna e espaçamento geral */
+  font-family: 'Poppins', Arial, sans-serif;
+  /* Gradiente de fundo suave */
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  padding: 30px;  /* Espaçamento interno */
+  margin: 0;      /* Remove a margem padrão do body */
+  color: #444;    /* Cor padrão para o texto */
 }
 
-/* Título centralizado */
+/* ===== TÍTULO ===== */
 h1 {
+  /* Centraliza o título */
   text-align: center;
+  /* Cor roxa escura */
   color: #200066;
+  /* Espaçamento inferior para separar do conteúdo */
+  margin-bottom: 40px;
+  /* Tamanho da fonte maior para o título */
+  font-size: 3rem;
+  letter-spacing: 1.5px;  /* Espaçamento entre as letras */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  font-weight: 700;        /* Peso da fonte mais pesado */
+  /* Sombra no texto para destacar */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para botões */
+/* ===== BOTÕES ===== */
 .botao, button {
+  /* Cor de fundo do botão */
   background-color: #200066;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
+  color: white;  /* Cor do texto */
+  padding: 14px 30px; /* Espaçamento interno */
+  border: none;        /* Remove as bordas padrão */
+  border-radius: 8px;   /* Bordas arredondadas */
+  text-decoration: none; /* Remove o sublinhado de links */
+  cursor: pointer;      /* Aparece o cursor de pointer */
+  font-size: 1.1rem;     /* Tamanho da fonte do botão */
+  letter-spacing: 1px;   /* Espaçamento entre as letras */
+  transition: all 0.3s ease;  /* Transição suave para interações */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Sombra no botão */
+  border-radius: 10px;   /* Bordas ainda mais arredondadas */
 }
 
-/* Efeito hover */
+/* Efeito hover no botão */
 .botao:hover, button:hover {
+  /* Muda a cor do fundo no hover */
   background-color: #6600aa;
+  /* Sobe e aumenta o botão quando o mouse passa por cima */
+  transform: translateY(-3px) scale(1.05);
 }
 
-/* Estilo da tabela */
+/* Efeito ativo (quando o botão é clicado) */
+.botao:active, button:active {
+  transform: translateY(0) scale(1); /* Volta ao tamanho original */
+}
+
+/* ===== TABELA ===== */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  width: 100%;  /* A tabela ocupa toda a largura disponível */
+  border-collapse: collapse;  /* Remove espaços entre as células */
+  margin-top: 40px;   /* Espaçamento superior */
+  background: white;  /* Fundo branco para a tabela */
+  border-radius: 10px;  /* Bordas arredondadas */
+  overflow: hidden;   /* Garante que bordas arredondadas funcionem corretamente */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);  /* Sombra suave ao redor da tabela */
 }
 
 th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
+  padding: 18px;   /* Espaçamento interno nas células */
+  text-align: center; /* Texto centralizado */
+  font-size: 1rem;  /* Tamanho da fonte das células */
+  border-bottom: 1px solid #eee; /* Linha de separação entre as linhas */
+  transition: all 0.3s ease;  /* Transição suave para o efeito hover */
 }
 
 th {
+  /* Cor de fundo das células de cabeçalho */
   background-color: #200066;
-  color: white;
+  color: white;  /* Cor do texto */
+  font-size: 1.2rem;  /* Tamanho maior para os cabeçalhos */
+  font-weight: 600;   /* Peso maior para o texto do cabeçalho */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  text-transform: uppercase;  /* Deixa o texto maiúsculo */
 }
 
-/* Formulário centralizado */
+td {
+  background: #f9f9f9; /* Cor de fundo suave para as células */
+  font-size: 1rem;   /* Tamanho da fonte */
+  color: #333;       /* Cor do texto */
+}
+
+/* Efeito hover nas células da tabela */
+td:hover {
+  background-color: #e1d8ff;  /* Muda a cor de fundo ao passar o mouse */
+  transform: scale(1.02);      /* Aumenta ligeiramente o tamanho */
+}
+
+tr:nth-child(even) td {
+  background: #f4f4f4; /* Cor para as linhas pares */
+}
+
+tr:nth-child(odd) td {
+  background: #ffffff; /* Cor para as linhas ímpares */
+}
+
+/* ===== FORMULÁRIO ===== */
 form {
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  max-width: 500px;  /* Largura máxima do formulário */
+  margin: 0 auto;    /* Centraliza o formulário */
+  padding: 30px;     /* Espaçamento interno */
+  background: white; /* Fundo branco */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Sombra para o formulário */
+  display: flex;  /* Flexbox para alinhar os elementos */
+  flex-direction: column; /* Organiza os elementos na coluna */
+  gap: 18px;      /* Espaçamento entre os campos */
+  transition: all 0.3s ease; /* Transição suave para o hover */
+}
+
+/* Efeito no formulário ao passar o mouse */
+form:hover {
+  transform: scale(1.02); /* Leve aumento ao passar o mouse */
 }
 
 input {
-  margin-bottom: 10px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 12px;   /* Espaçamento interno */
+  border: 1px solid #ddd; /* Borda suave */
+  border-radius: 6px;  /* Bordas arredondadas */
+  font-size: 1rem;  /* Tamanho da fonte */
+  background: #f9f9f9; /* Fundo suave */
+  transition: all 0.3s ease;  /* Transição suave no foco */
+}
+
+/* Efeito no input quando está em foco */
+input:focus {
+  border-color: #200066;  /* Borda roxa ao focar */
+  box-shadow: 0 0 8px rgba(32, 0, 102, 0.3); /* Sombra suave ao redor */
+  outline: none; /* Remove a borda padrão do foco */
+}
+
+/* Efeito no placeholder dos inputs em foco */
+input:focus::placeholder {
+  color: #200066;  /* Muda a cor do texto do placeholder */
+  font-weight: bold; /* Torna o texto do placeholder em negrito */
+}
+
+/* ===== BOTÃO DE SUBMISSÃO ===== */
+input[type="submit"] {
+  background-color: #200066; /* Cor de fundo roxa */
+  color: white;   /* Cor do texto */
+  border-radius: 10px;  /* Bordas arredondadas */
+  padding: 15px;   /* Espaçamento interno */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  cursor: pointer;   /* Mostra o cursor de clique */
+  border: none;     /* Remove a borda padrão */
+  transition: all 0.3s ease; /* Transição suave para interações */
+}
+
+/* Efeito de hover no botão de submissão */
+input[type="submit"]:hover {
+  background-color: #6600aa; /* Muda a cor de fundo */
+  transform: scale(1.05);    /* Aumenta ligeiramente o botão */
+}
+
+/* ===== ANIMAÇÕES DE ENTRADA ===== */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;              /* Começa invisível */
+    transform: translateY(20px); /* Começa deslocado para baixo */
+  }
+  100% {
+    opacity: 1;              /* Fica visível */
+    transform: translateY(0); /* Move-se para a posição original */
+  }
+}
+
+/* Aplica a animação aos elementos */
+h1, .botao, table, form {
+  animation: fadeIn 1s ease-out; /* Efeito de desvanecimento */
 }

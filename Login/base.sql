@@ -20,3 +20,8 @@ CREATE TABLE IF NOT EXISTS contas (
 -- Insere um usuário padrão (exemplo)
 INSERT INTO contas (nome_usuario, hash_senha)
 VALUES ('gestor', 'senha123');
+
+
+SHOW TABLES;
+
+SELECT * FROM itens;
